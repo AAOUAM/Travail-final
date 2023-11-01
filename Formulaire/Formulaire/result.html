@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <body style ="text-align: center; border: 2px solid #000000;">
+        <h1><div>Titre du CV :<br><span id="titre"></span></div> <br /></h1>
+        
+        <div><strong>Nom : </strong><span id="Nom"></span></div><br>
+        <div><strong>prénom : </strong><span id="prenom"></span></div><br>
+        <div><strong>Age : </strong> <span id="age"></span></div><br>
+        <div><strong>sexe : </strong><span id="sexe"></span></div><br>
+        <div><strong>Adresse : </strong><span id="adresse"></span></div><br>
+        <div><strong>Email : </strong><span id="email"></span></div><br>
+        <div><strong>Tél : </strong><span id="tel"></span></div><br>
+        <div><strong>tec : </strong><span id="tec"></span></div><br>
+        <div><strong>langue : </strong><span id="langue"></span></div><br>
+
+
+
+       <script>
+           const titre = localStorage.getItem('titre');
+           const nom = localStorage.getItem('Nom');
+           const prenom = localStorage.getItem('prenom');
+           const email = localStorage.getItem('email');
+           const age = localStorage.getItem('age');
+           const sexe = localStorage.getItem("sexe");
+           const adresse = localStorage.getItem("adresse");
+           const tel = localStorage.getItem("tel");
+           const langue = localStorage.getItem('langue');
+           const tec = localStorage.getItem('tec');
+
+           document.getElementById('titre').textContent = titre ;
+           document.getElementById('Nom').textContent = nom ;
+           document.getElementById('prenom').textContent = prenom ;
+           document.getElementById('email').textContent = email ;
+           document.getElementById('age').textContent = age ;
+           document.getElementById('sexe').textContent = sexe ;
+           document.getElementById("adresse").textContent = adresse;
+           document.getElementById("tel").textContent = tel;
+           document.getElementById("langue").textContent = langue;
+           document.getElementById('tec').textContent = tec ;
+    
+       </script> 
+    </body>
+</html>
