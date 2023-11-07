@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="formulaire.css" />
+  </head>
+
+  <body>
+    <form id="form">
+      <div class="container">
+        <br />
+        <h1 class="title1">Données personnelles</h1>
+        <div class="ob">
+          <label for="linkedin">Titre du CV :</label><br />
+          <input
+            type="text"
+            id="titre"
+            placeholder="Ex. Titre de CV"
+            required
+          /><br />
+
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" placeholder="Ex. DUBOIS" required /><br />
+
+          <label for="nom">Prénom :</label>
+          <input
+            type="text"
+            id="prenom"
+            placeholder="Ex. Jean"
+            required
+          /><br />
+
+          <label for="addresse">Adresse :</label><br />
+          <input
+            type="text"
+            id="adresse"
+            placeholder="Ex. 12 Rue Ibn Tachfine, Hay Riad , Rabat "
+            required
+          /><br />
+
+          <label for="date de naissance">Age :</label><br />
+          <input type="number" id="age" placeholder="Ex. 20" required /><br />
+
+          <label for="tel">Tél :</label>
+          <input
+            type="text"
+            id="tel"
+            placeholder="Ex.+212 6 00 00 00 00"
+            required
+          /><br />
+
+          <label for="email">Email :</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Ex. yourmail@gmail.com"
+            required
+          /><br />
+        </div>
+
+        <label for="sexe">sexe:</label><br /><br />
+        <div class="sexe">
+          <input type="radio" name="sexe" value="homme" id="homme" />
+          <label>Homme</label>
+          <input type="radio" name="sexe" value="femme" id="femme" />
+          <label>femme</label>
+        </div>
+      </div>
+
+      <div class="container1">
+        <h1 class="title1">Formation et diplôme</h1>
+        <div>
+          <label for="dip" id=" dip"> Diplôme obtenu :</label>
+          <div>
+            <label class="checkbox-label"
+              ><input type="checkbox" name="diplo" id="diplo" value="License" />License</label
+            >
+            <label class="checkbox-label"
+              ><input type="checkbox" name="diplo" id="diplo" value="Master" />Master</label
+            >
+            <label class="checkbox-label"
+              ><input type="checkbox" name="diplo" id="diplo" value="Doctorat" />Doctorat
+            </label>
+            <label class="checkbox-label"
+              ><input type="checkbox" name="diplo" id="diplo" value="Ingénierie"/>Ingénierie</label><br />
+            <label class="checkbox-label"
+              ><input type="checkbox" name="diplo" id="diplo" value="DUT"/>DUT
+            </label>
+            <label class="checkbox-label"
+              ><input type="checkbox" name="diplo" id="diplo" value="DEUG"/>DEUG
+            </label>
+            <label class="checkbox-label"
+              ><input type="checkbox" name="diplo" id="diplo" value="BTS"/>BTS</label
+            >
+          </div>
+          <br />
+
+          <div>
+            <label for="name">Description du diplômes obtenus:</label><br />
+            <textarea 
+            id="description" 
+            cols="40" 
+            rows="7" 
+            placeholder="Tapez une Description" 
+            required></textarea>
+
+            </textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="container2">
+        <h1 class="title1">Autres</h1>
+        <div>
+          <label for="name">Vos compétences techniques :</label><br />
+          <textarea
+            id="tec"
+            cols="40"
+            rows="7"
+            placeholder="Tapez votre objectif professionel"
+            required
+          >
+          </textarea>
+          <br /><br />
+
+          <label for="name">Vos compétences linguistiques :</label><br />
+          <textarea
+            id="langue"
+            cols="40"
+            rows="7"
+            placeholder="Tapez vos compétences linguistiques"
+            required
+          >
+          </textarea
+          ><br /><br />
+
+          <label for="name">Loisirs :</label><br />
+          <textarea
+            id="loisirs"
+            cols="40"
+            rows="7"
+            placeholder="Tapez vos Loisirs"
+            required
+          >
+          </textarea>
+        </div>
+      </div>
+
+      <button type="submit">Validez votre réponse</button>
+    </form>
+    <script src="JSform.js"></script>
+  </body>
+</html>
